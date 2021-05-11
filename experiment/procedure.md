@@ -1,5 +1,9 @@
-**Manual and Procedure**
 
-The Manual and Procedure for the experiment is detailed in the below link.
+- Perform the tensile yield test with the pp dumbbell specimens and evaluate the
+yield point from the resulting stress-strain curve.
 
-<a href="docs/Exp-10-Yield-criterion.pdf">read more</a>
+- Mount the fixture on the tensile tester and perform the shear yield test with the pp
+strip specimens.
+
+- Construct the corresponding Tresca’s hexagon and the von Mises’ ellipse and
+demonstrate the validity of these yield criteria.
