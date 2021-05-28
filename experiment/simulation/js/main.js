@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			[knobStartX + knobWidth1 ,knobStartY],
 			[knobStartX + knobWidth2 ,knobStartY + knobLength],
 			[knobStartX + knobWidth1 - knobWidth2,  knobStartY + knobLength]
-		]
+		];
 		tmHandle = window.setTimeout(draw, 1000 / fps);
 		playFlag = 0;
 		playPause();
@@ -49,13 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	const fill = "#D3D3D3";
 	let fps = 12;
 
-	const topStartX = 550
-	const topStartY = 100
-	const topWidth1 = 100
-	const topWidth2 = 80
-	const topLength1 = 50
-	const topLength2 = 80
-	let playFlag = 1
+	const topStartX = 550;
+	const topStartY = 100;
+	const topWidth1 = 100;
+	const topWidth2 = 80;
+	const topLength1 = 50;
+	const topLength2 = 80;
+	let playFlag = 1;
 
 	let topKnob = [
 		[topStartX , topStartY],
@@ -67,16 +67,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		[topStartX + (topWidth1 - topWidth2), topStartY + topLength1],
 		[topStartX , topStartY + topLength1]
 
-	]
+	];
 
-	const bottomStartx = 530
-	const bottomStarty = 280
-	const bottomWidth1 = 140
-	const bottomWidth2 = 100
-	const bottomWidth3 = 60
-	const bottomLength1 = 60
-	const bottomLength2 = 50
-	const bottomLength3 = 80
+	const bottomStartx = 530;
+	const bottomStarty = 280;
+	const bottomWidth1 = 140;
+	const bottomWidth2 = 100;
+	const bottomWidth3 = 60;
+	const bottomLength1 = 60;
+	const bottomLength2 = 50;
+	const bottomLength3 = 80;
 
 
 	let bottomKnob = [
@@ -92,12 +92,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		[bottomStartx + (bottomWidth1 - bottomWidth2), bottomStarty + bottomLength1 + bottomLength2],
 		[bottomStartx + (bottomWidth1 - bottomWidth2), bottomStarty + bottomLength1],
 		[bottomStartx , bottomStarty + bottomLength1]
-	]
+	];
 
-	const slabX = 530
-	const slabY = 470
-	const slabWidth = 140
-	const slabLength = 40
+	const slabX = 530;
+	const slabY = 470;
+	const slabWidth = 140;
+	const slabLength = 40;
 
 	let slab = [
 		[slabX ,slabY],
@@ -105,20 +105,20 @@ document.addEventListener('DOMContentLoaded', function () {
 		[slabX + slabWidth ,slabY+ slabLength],
 		[slabX, slabY + slabLength]
 		
-	]
+	];
 
-	const knobStartX = 570
-	const knobStartY = 170
-	const knobWidth1 = 60
-	const knobWidth2 = 32
-	const knobLength = 55
+	const knobStartX = 570;
+	const knobStartY = 170;
+	const knobWidth1 = 60;
+	const knobWidth2 = 32;
+	const knobLength = 55;
 
 	let knob = [
 		[knobStartX ,knobStartY],
 		[knobStartX + knobWidth1 ,knobStartY],
 		[knobStartX + knobWidth2 ,knobStartY + knobLength],
 		[knobStartX + knobWidth1 - knobWidth2,  knobStartY + knobLength]
-	]
+	];
 	function drawStatic(ctx, obj,color) //for drawing the topKnob
 	{
 		ctx.save();
