@@ -13,31 +13,31 @@ document.addEventListener('DOMContentLoaded', function () {
 		window.clearTimeout(tmHandle); 
 
 		knob = [
-			[knob_startx ,knob_starty],
-			[knob_startx + knob_width1 ,knob_starty],
-			[knob_startx + knob_width2 ,knob_starty + knob_length],
-			[knob_startx + knob_width1 - knob_width2,  knob_starty + knob_length]
+			[knobStartX ,knobStartY],
+			[knobStartX + knobWidth1 ,knobStartY],
+			[knobStartX + knobWidth2 ,knobStartY + knobLength],
+			[knobStartX + knobWidth1 - knobWidth2,  knobStartY + knobLength]
 		]
 		tmHandle = window.setTimeout(draw, 1000 / fps);
-		playflag = 0;
+		playFlag = 0;
 		playPause();
 		
 	}
 
 	function playPause()
 	{
-		if(playflag)
+		if(playFlag)
 		{
 			window.clearTimeout(tmHandle);
 			document.getElementById("play/pause").innerHTML = "Play";
-			playflag = 0;
+			playFlag = 0;
 		}
 		else
 		{
 			window.clearTimeout(tmHandle); 
 			tmHandle = setTimeout(draw, 1000 / fps);
 			document.getElementById("play/pause").innerHTML = "Pause";
-			playflag = 1;
+			playFlag = 1;
 		}
 	}
 	const canvas = document.getElementById("main");
@@ -49,77 +49,77 @@ document.addEventListener('DOMContentLoaded', function () {
 	const fill = "#D3D3D3";
 	let fps = 12;
 
-	const top_startx = 550
-	const top_starty = 100
-	const top_width1 = 100
-	const top_width2 = 80
-	const top_length1 = 50
-	const top_length2 = 80
-	let playflag = 1
+	const topStartX = 550
+	const topStartY = 100
+	const topWidth1 = 100
+	const topWidth2 = 80
+	const topLength1 = 50
+	const topLength2 = 80
+	let playFlag = 1
 
-	let topknob = [
-		[top_startx , top_starty],
-		[top_startx + top_width1 , top_starty],
-		[top_startx + top_width1 ,top_starty + top_length1],
-		[top_startx + top_width2 , top_starty + top_length1],
-		[top_startx + top_width2 , top_starty + top_length1 + top_length2],
-		[top_startx + (top_width1 - top_width2), top_starty + top_length1 + top_length2],
-		[top_startx + (top_width1 - top_width2), top_starty + top_length1],
-		[top_startx , top_starty + top_length1]
+	let topKnob = [
+		[topStartX , topStartY],
+		[topStartX + topWidth1 , topStartY],
+		[topStartX + topWidth1 ,topStartY + topLength1],
+		[topStartX + topWidth2 , topStartY + topLength1],
+		[topStartX + topWidth2 , topStartY + topLength1 + topLength2],
+		[topStartX + (topWidth1 - topWidth2), topStartY + topLength1 + topLength2],
+		[topStartX + (topWidth1 - topWidth2), topStartY + topLength1],
+		[topStartX , topStartY + topLength1]
 
 	]
 
-	const bottom_startx = 530
-	const bottom_starty = 280
-	const bottom_width1 = 140
-	const bottom_width2 = 100
-	const bottom_width3 = 60
-	const bottom_length1 = 60
-	const bottom_length2 = 50
-	const bottom_length3 = 80
+	const bottomStartx = 530
+	const bottomStarty = 280
+	const bottomWidth1 = 140
+	const bottomWidth2 = 100
+	const bottomWidth3 = 60
+	const bottomLength1 = 60
+	const bottomLength2 = 50
+	const bottomLength3 = 80
 
 
-	let bottomknob = [
-		[bottom_startx , bottom_starty],
-		[bottom_startx + bottom_width1 , bottom_starty],
-		[bottom_startx + bottom_width1 ,bottom_starty + bottom_length1],
-		[bottom_startx + bottom_width2 , bottom_starty + bottom_length1],
-		[bottom_startx + bottom_width2 , bottom_starty + bottom_length1 + bottom_length2],
-		[bottom_startx + bottom_width3 , bottom_starty + bottom_length1 + bottom_length2],
-		[bottom_startx + bottom_width3 , bottom_starty + bottom_length1 + bottom_length2 + bottom_length3],
-		[bottom_startx + (bottom_width1 - bottom_width3) , bottom_starty + bottom_length1 + bottom_length2 + bottom_length3],
-		[bottom_startx + (bottom_width1 - bottom_width3) , bottom_starty + bottom_length1 + bottom_length2],
-		[bottom_startx + (bottom_width1 - bottom_width2), bottom_starty + bottom_length1 + bottom_length2],
-		[bottom_startx + (bottom_width1 - bottom_width2), bottom_starty + bottom_length1],
-		[bottom_startx , bottom_starty + bottom_length1]
+	let bottomKnob = [
+		[bottomStartx , bottomStarty],
+		[bottomStartx + bottomWidth1 , bottomStarty],
+		[bottomStartx + bottomWidth1 ,bottomStarty + bottomLength1],
+		[bottomStartx + bottomWidth2 , bottomStarty + bottomLength1],
+		[bottomStartx + bottomWidth2 , bottomStarty + bottomLength1 + bottomLength2],
+		[bottomStartx + bottomWidth3 , bottomStarty + bottomLength1 + bottomLength2],
+		[bottomStartx + bottomWidth3 , bottomStarty + bottomLength1 + bottomLength2 + bottomLength3],
+		[bottomStartx + (bottomWidth1 - bottomWidth3) , bottomStarty + bottomLength1 + bottomLength2 + bottomLength3],
+		[bottomStartx + (bottomWidth1 - bottomWidth3) , bottomStarty + bottomLength1 + bottomLength2],
+		[bottomStartx + (bottomWidth1 - bottomWidth2), bottomStarty + bottomLength1 + bottomLength2],
+		[bottomStartx + (bottomWidth1 - bottomWidth2), bottomStarty + bottomLength1],
+		[bottomStartx , bottomStarty + bottomLength1]
 	]
 
-	const slabx = 530
-	const slaby = 470
-	const slab_width = 140
-	const slab_length = 40
+	const slabX = 530
+	const slabY = 470
+	const slabWidth = 140
+	const slabLength = 40
 
 	let slab = [
-		[slabx ,slaby],
-		[slabx + slab_width ,slaby],
-		[slabx + slab_width ,slaby+ slab_length],
-		[slabx, slaby + slab_length]
+		[slabX ,slabY],
+		[slabX + slabWidth ,slabY],
+		[slabX + slabWidth ,slabY+ slabLength],
+		[slabX, slabY + slabLength]
 		
 	]
 
-	const knob_startx = 570
-	const knob_starty = 170
-	const knob_width1 = 60
-	const knob_width2 = 32
-	const knob_length = 55
+	const knobStartX = 570
+	const knobStartY = 170
+	const knobWidth1 = 60
+	const knobWidth2 = 32
+	const knobLength = 55
 
 	let knob = [
-		[knob_startx ,knob_starty],
-		[knob_startx + knob_width1 ,knob_starty],
-		[knob_startx + knob_width2 ,knob_starty + knob_length],
-		[knob_startx + knob_width1 - knob_width2,  knob_starty + knob_length]
+		[knobStartX ,knobStartY],
+		[knobStartX + knobWidth1 ,knobStartY],
+		[knobStartX + knobWidth2 ,knobStartY + knobLength],
+		[knobStartX + knobWidth1 - knobWidth2,  knobStartY + knobLength]
 	]
-	function drawStatic(ctx, obj,color) //for drawing the topknob
+	function drawStatic(ctx, obj,color) //for drawing the topKnob
 	{
 		ctx.save();
 		ctx.fillStyle = color;
@@ -147,10 +147,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		ctx.stroke();
 
 		ctx.fillStyle = fill;
-		drawStatic(ctx, bottomknob,"#c2c9d1");
+		drawStatic(ctx, bottomKnob,"#c2c9d1");
 		drawStatic(ctx, slab,"black");
 		drawStatic(ctx,knob,"black")
-		drawStatic(ctx, topknob,"#c2c9d1s");
+		drawStatic(ctx, topKnob,"#c2c9d1s");
 		
 		let v = knob;
 		v[0][1] += 1;
