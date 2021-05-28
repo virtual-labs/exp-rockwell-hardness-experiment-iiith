@@ -2,13 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-	const playButton = document.getElementById('play');
-	const pauseButton = document.getElementById('pause');
+	const playPauseButton = document.getElementById('play/pause');
 	const restartButton = document.getElementById('restart');
 
-	playButton.addEventListener('click', function() {  window.clearTimeout(tmHandle); tmHandle = setTimeout(draw, 1000 / fps); });
+	playPauseButton.addEventListener('click', function() { playPause()});
 	restartButton.addEventListener('click', function() {restart();});
-	pauseButton.addEventListener('click', function() { window.clearTimeout(tmHandle); });
 
 	function restart() 
 	{ 
@@ -20,11 +18,28 @@ document.addEventListener('DOMContentLoaded', function () {
 			[knob_startx + knob_width2 ,knob_starty + knob_length],
 			[knob_startx + knob_width1 - knob_width2,  knob_starty + knob_length]
 		]
-		tmHandle = window.setTimeout(draw, 1000 / fps); 
+		tmHandle = window.setTimeout(draw, 1000 / fps);
+		playflag = 0;
+		playPause();
+		
 	}
 
-
-
+	function playPause()
+	{
+		if(playflag)
+		{
+			window.clearTimeout(tmHandle);
+			document.getElementById("play/pause").innerHTML = "Play";
+			playflag = 0;
+		}
+		else
+		{
+			window.clearTimeout(tmHandle); 
+			tmHandle = setTimeout(draw, 1000 / fps);
+			document.getElementById("play/pause").innerHTML = "Pause";
+			playflag = 1;
+		}
+	}
 	const canvas = document.getElementById("main");
 	canvas.width = 1200;
 	canvas.height = 600;
@@ -40,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const top_width2 = 80
 	const top_length1 = 50
 	const top_length2 = 80
+	let playflag = 1
 
 	let topknob = [
 		[top_startx , top_starty],
@@ -103,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		[knob_startx + knob_width2 ,knob_starty + knob_length],
 		[knob_startx + knob_width1 - knob_width2,  knob_starty + knob_length]
 	]
-	function drawstatic(ctx, obj,color) //for drawing the topknob
+	function drawStatic(ctx, obj,color) //for drawing the topknob
 	{
 		ctx.save();
 		ctx.fillStyle = color;
@@ -131,12 +147,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		ctx.stroke();
 
 		ctx.fillStyle = fill;
-		drawstatic(ctx, bottomknob,"#c2c9d1");
-		drawstatic(ctx, slab,"black");
-		drawstatic(ctx,knob,"black")
-		drawstatic(ctx, topknob,"#c2c9d1s");
+		drawStatic(ctx, bottomknob,"#c2c9d1");
+		drawStatic(ctx, slab,"black");
+		drawStatic(ctx,knob,"black")
+		drawStatic(ctx, topknob,"#c2c9d1s");
 		
-
 		let v = knob;
 		v[0][1] += 1;
 		v[1][1] +=1;
