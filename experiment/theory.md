@@ -1,32 +1,19 @@
+ 
+ 
+ - Rockwell test is developed by the Wilson instrument co U.S.A in 1920. This test is an indentation
+test used for smaller specimens and harder materials. The test is subject of IS: 1586. The hardness
+of a material is resistance to penetration under a localized pressure or resistance to abrasion.
+Hardness tests provide an accurate, rapid and economical way of determining the resistance of
+materials to deformation.
+There are three general types of hardness measurements depending upon the manner in which the
+test is conducted:
+    1. Scratch hardness measurement,
+    2. Rebound hardness measurement
+    3. Indention hardness measurement
 
-## Maximum-Shearing-Stress Criterion
-
-According to this criterion, a given structural component is safe as long as the
-maximum value τmax of the shearing stress in that component remains smaller than the
-corresponding value of the shearing stress in a tensile-test specimen of the same
-material as the specimen starts to yield.
-
-The maximum value of the shearing stress under a centric axial load is equal to half
-the value of the corresponding normal axial stress, hence the maximum shearing stress
-in a tensile-test specimen is ½σ<sub>Y</sub> as the specimen starts to yield. On the other hand, for
-plane stress, the maximum value τmax of the shearing stress is equal to ½|σ<sub>max</sub>| if the
-principal stresses are either both positive or both negative, and to ½|σ<sub>max</sub> – σ<sub>min</sub>| if the maximum stress is positive and the minimum stress negative. Thus, if the principal
-stresses σa and σb have the same sign, the maximum-shearing-stress criterion gives
-
-<p align = "center">|σ<sub>a</sub>| < σ<sub>Y</sub></p>       
-
-<p align = "center">|σ<sub>b</sub>| < σ<sub>Y</sub></p>  
-
-
-## Maxirnum-Distortion-Enoryy Criterion
-
-According to this criterion, known as the von Mises criterion, a given structural
-component is safe as long as the maximum value of the distortion energy per unit volume in that material remains smaller than (u<sub>d</sub>)<sub>Y</sub>, the distortion energy per unit volume
-required to cause yield in a tensile-test specimen of the same material. If the distortion
-energy per unit volume in an isotropic material under plane stress is ud, the maximum- distortion-energy criterion indicates that the structural component is safe as long as u<sub>d</sub> <
-(u<sub>d</sub>)<sub>Y</sub>, i.e., as long as the point of coordinates σa and σb falls within the area. This area is bounded by the ellipse of equation :
-
-<p align = "center">σ<sub>a</sub>
-<sup>2</sup> – σ<sub>a</sub>σ<sub>b</sub> + σ<sub>b</sub>
-<sup>2</sup> = σ<sub>Y</sub>
-<sup>2</sup></p>
+- In scratch hardness method the material are rated on their ability to scratch one another and it is
+usually used by mineralogists only. In rebound hardness measurement, a standard body is usually
+dropped on to the material surface and the hardness is measured in terms of the height of its
+rebound .The general means of judging the hardness is measuring the resistance of a material to
+indentation. The indenters usually a ball cone or pyramid of a material much harder than that being
+used
