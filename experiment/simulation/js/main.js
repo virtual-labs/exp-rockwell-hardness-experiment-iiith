@@ -218,7 +218,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (v[0][1] < 230) {
             tmHandle = window.setTimeout(draw, 1000 / FPS);
         } else {
-            tmHandle = window.setTimeout(zoom, 1000 / FPS);
+            zoom();
+            pauseButton.setAttribute("disabled", "true");
         }
     }
 
