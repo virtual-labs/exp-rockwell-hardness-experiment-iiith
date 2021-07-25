@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const topLength1 = 50;
     const topLength2 = 80;
 
-    let topKnob = [
+    const topKnob = [
         [topStartX, topStartY],
         [topStartX + topWidth1, topStartY],
         [topStartX + topWidth1, topStartY + topLength1],
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const bottomLength2 = 50;
     const bottomLength3 = 80;
 
-    let bottomKnob = [
+    const bottomKnob = [
         [bottomStartx, bottomStarty],
         [bottomStartx + bottomWidth1, bottomStarty],
         [bottomStartx + bottomWidth1, bottomStarty + bottomLength1],
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const slabWidth = 140;
     const slabLength = 40;
 
-    let slab = [
+    const slab = [
         [slabX, slabY],
         [slabX + slabWidth, slabY],
         [slabX + slabWidth, slabY + slabLength],
@@ -133,28 +133,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const testWidth = 60;
     const testHeight = 30;
 
-    let test = [
+    const test = [
         [testX, testY],
         [testX + testWidth, testY],
         [testX + testWidth, testY + testHeight],
         [testX, testY + testHeight]
     ];
 
-    let centerX = 250;
-    let centerY = 200;
-    let radius = 50;
-    let boxWidth = 100;
+    const centerX = 250;
+    const centerY = 200;
+    const radius = 50;
+    const boxWidth = 100;
     let tmHandle;
 
-    let zoomHeight = 30;
-    let box = [
+    const zoomHeight = 30;
+    const box = [
         [centerX, centerY - radius],
         [centerX + boxWidth, centerY - radius],
         [centerX + boxWidth, centerY + radius],
         [centerX, centerY + radius],
     ];
 
-    let zoomTest = [
+    const zoomTest = [
         [centerX, centerY - zoomHeight],
         [centerX + boxWidth, centerY - zoomHeight],
         [centerX + boxWidth, centerY + zoomHeight],
