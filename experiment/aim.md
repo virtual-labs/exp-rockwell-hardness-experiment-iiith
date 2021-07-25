@@ -1,3 +1,3 @@
 **Objective**
 
-- To determine Rockwell hardness number for a given specimen.
+To determine Rockwell hardness number for a given specimen.
