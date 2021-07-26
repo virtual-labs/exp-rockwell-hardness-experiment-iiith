@@ -1,7 +1,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "For how long is the load maintained in a Brinell test?",
+            "question": "1. For how long is the load maintained in a Brinell test?",
             "answers": {
                 "a": "2-4 seconds",
                 "b": "10-15 seconds",
@@ -15,7 +15,7 @@
             "difficulty": "beginner"
         },
         {
-            "question": "What kind of indenter is used in a Brinell test?",
+            "question": "2. What kind of indenter is used in a Brinell test?",
             "answers": {
                 "a": "Diamond cone",
                 "b": "Steel ball",
@@ -29,7 +29,7 @@
             "difficulty": "intermediate"
         },
         {
-            "question": "What is a limitation of the Rockwell test?",
+            "question": "3. What is a limitation of the Rockwell test?",
             "answers": {
                 "a": "Slow speed",
                 "b": "Personal error",

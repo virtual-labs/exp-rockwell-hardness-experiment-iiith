@@ -1,5 +1,3 @@
- 
- 
 Rockwell test was developed by the Wilson instrument co U.S.A in 1920. This test is an indentation
 test used for smaller specimens and harder materials. The test is subject of IS: 1586. The hardness
 of a material is resistance to penetration under a localized pressure or resistance to abrasion.

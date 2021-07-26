@@ -1,7 +1,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "Rockwell test utilizes ____ as a measure of hardness.",
+            "question": "1. Rockwell test utilizes ____ as a measure of hardness.",
             "answers": {
                 "a": "Load",
                 "b": "Depth of indentation",
@@ -10,14 +10,15 @@
             },
             "explanations": {
                 "a": "Load is constant in Rockwell Test for different materials.",
-                "b": "Rockwell test utilizes depth of indentation as a measure of hardness. It is done for the constant load. Time is specified.",
-                "d": "Time of Loading is constant in Rockwell Test for different materials"
+                "b": "Rockwell test utilizes depth of indentation as a measure of hardness. It is done for a constant load. Time is specified.",
+                "c": "Diameter of indentation is constant in Rockwell Test for different materials.",
+                "d": "Time of loading is constant in Rockwell Test for different materials."
             },
             "correctAnswer": "b",
             "difficulty": "beginner"
         },
         {
-            "question": "What is the apex angle of Rockwell cone indentor?",
+            "question": "2. What is the apex angle of Rockwell cone indentor?",
             "answers": {
                 "a": "90",
                 "b": "60",
@@ -25,13 +26,13 @@
                 "d": "120"
             },
             "explanations": {
-                "d": "Rockwell hardness testing machine essentially consists of a supporting table for placing the specimen, a hand wheel to raise or lower the supporting table, a Rockwell ball indenter which is a hardened steel ball 1/6'' in diameter,a Rockwell cone indenter which is a diamond cone of 120°."
+                "d": "Rockwell hardness testing machine essentially consists of a supporting table for placing the specimen, a hand wheel to raise or lower the supporting table, a Rockwell ball indenter which is a hardened steel ball 1/6'' in diameter and a Rockwell cone indenter which is a diamond cone of 120°."
             },
             "correctAnswer": "d",
             "difficulty": "intermediate"
         },
         {
-            "question": "Hardness is dependent on ____",
+            "question": "3. Hardness is dependent on ____ .",
             "answers": {
                 "a": "Viscosity",
                 "b": "Elastic stiffness",

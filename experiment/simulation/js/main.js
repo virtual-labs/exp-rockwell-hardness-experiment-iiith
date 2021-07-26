@@ -3,13 +3,13 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const restartButton = document.getElementById('restart');
-    restartButton.addEventListener('click', function() { restart(); });
+    restartButton.addEventListener('click', restart);
 
     const playButton = document.getElementById('play');
-    playButton.addEventListener('click', function() { play(); });
+    playButton.addEventListener('click', play);
 
     const pauseButton = document.getElementById('pause');
-    pauseButton.addEventListener('click', function() { pause(); });
+    pauseButton.addEventListener('click', pause);
 
     const slider = document.getElementById('speed');
     const output = document.getElementById('demo_speed');
@@ -121,12 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const knobWidth2 = 32;
     const knobLength = 55;
 
-    let knob = [
-        [knobStartX, knobStartY],
-        [knobStartX + knobWidth1, knobStartY],
-        [knobStartX + knobWidth2, knobStartY + knobLength],
-        [knobStartX + knobWidth1 - knobWidth2, knobStartY + knobLength]
-    ];
+    let knob = [];
 
     const testX = 120;
     const testY = 280;
@@ -160,6 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         [centerX + boxWidth, centerY + zoomHeight],
         [centerX, centerY + zoomHeight],
     ];
+    setAll();
     init();
 
     function init() {
