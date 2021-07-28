@@ -205,11 +205,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         init();
-        let v = knob;
-        v[0][1] += 1;
-        v[1][1] += 1;
-        v[2][1] += 1;
-        v[3][1] += 1;
+        let reference = knob;
+        reference[0][1] += 1;
+        reference[1][1] += 1;
+        reference[2][1] += 1;
+        reference[3][1] += 1;
 
         if (v[0][1] < 230) {
             tmHandle = window.setTimeout(draw, 1000 / FPS);
