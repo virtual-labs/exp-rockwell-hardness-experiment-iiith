@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
         reference[2][1] += 1;
         reference[3][1] += 1;
 
-        if (v[0][1] < 230) {
+        if (reference[0][1] < 230) {
             tmHandle = window.setTimeout(draw, 1000 / FPS);
         } else {
             zoom();
