@@ -8,5 +8,5 @@ test is conducted:
 
 1. Scratch hardness measurement : The materials are rated on their ability to scratch one another and it is usually used by mineralogists only. 
 2. Rebound hardness measurement : A standard body is usually dropped on to the material surface and the hardness is measured in terms of the height of its rebound.
-3. Indention hardness measurement : The general means of judging the hardness is measuring the resistance of a material to indentation.
+3. Indentation hardness measurement : The general means of judging the hardness is measuring the resistance of a material to indentation.
 
