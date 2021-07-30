@@ -1,0 +1,47 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "1. For how long is the load maintained in a Brinell test?",
+            "answers": {
+                "a": "2-4 seconds",
+                "b": "10-15 seconds",
+                "c": "20-35 seconds",
+                "d": "45-55 seconds"
+            },
+            "explanations": {
+                "b": "In the Brinell hardness test, the indenter is forced into the surface of the metal and maintained there for 10-15 seconds. This can take a standard load of 500-3000 kg in 500 kg increments."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. What kind of indenter is used in a Brinell test?",
+            "answers": {
+                "a": "Diamond cone",
+                "b": "Steel ball",
+                "c": "Pen dot",
+                "d": "Long tube"
+            },
+            "explanations": {
+                "b": " Brinell Hardness Test is one of the three available tests for checking the hardness of a material. Here, a hardened steel or tungsten carbide ball indenter is forced into the surface of the metal to be tested."
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "3. What is a limitation of the Rockwell test?",
+            "answers": {
+                "a": "Slow speed",
+                "b": "Personal error",
+                "c": "Bigger size of indentation",
+                "d": "Different indenters"
+            },
+            "explanations": {
+                "d": "Indenters should be changed according to the hardness of the specimen. It takes less time to perform. It has freedom from personal error."
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        }
+
+    ]
+}

@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<!-- Add CSS at the head of HTML file -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<div class="columns is-centered">
+    <div class="column has-text-centered mt-2">
+        <button id="play" class="v-button">Play</button>
+        <button id="pause" class="v-button" disabled>Pause</button>
+        <button id="restart" class="v-button" disabled>Restart</button>
+        <p>Simulation speed: <span id="demo_speed"></span>x</p>
+        <input type="range" min="1" max="8" value="4" class="slider" id="speed">
+    </div>
+</div>
+
+<div class="columns is-centered">
+    <div class="column has-text-centered is-half">
+        <canvas class="main" id="main"></canvas>
+    </div>
+    <div class="column">
+        <div class="v-table-wrap">
+            <table class="table is-bordered is-fullwidth v-table-primary mb-2">
+                <thead>
+                    <tr>
+                        <th>Trial</th>
+                        <th>Material</th>
+                        <th>Total Load (Kg)</th>
+                        <th>Rockwell Hardness Number (RHN)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="is-vcentered has-text-centered" rowspan="2">Cast Iron</td>
+                        <td class="is-vcentered has-text-centered" rowspan="2">100</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>59</td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-centered" colspan="4">Average Rockwell Hardness Number = 45.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="js/data.json"></script>
+<script src="./js/main.js"></script>
 </body>
+
 </html>
