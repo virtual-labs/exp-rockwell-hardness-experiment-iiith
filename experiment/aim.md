@@ -1,3 +1,2 @@
-**Objective**
+Structural elements and machine components made of a ductile material arc usually designed so that the ma¬terial will not yield under the expected loading conditions. When the element or component is under uniaxial stress (Fig. 1), the value of the normal stress σx, which will cause the material to yield, may be obtained readily from a tensile test conducted on a specimen of the same material, since the test specimen and the structural element or machine component are in the same state of stress. Thus, regardless of the actual mechanism which causes the mate¬rial to yield, we may state that the element or component will be safe as long as σx<σY, where σY is the yield strength of the test specimen.
 
-To determine Rockwell hardness number for a given specimen.
