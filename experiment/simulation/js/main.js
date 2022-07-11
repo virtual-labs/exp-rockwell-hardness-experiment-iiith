@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const canvas = document.getElementById("main");
     canvas.width = 450;
-    canvas.height = 600;
+    canvas.height = 680;
     // canvas.style = "border:3px solid;";
     const ctx = canvas.getContext("2d");
 
