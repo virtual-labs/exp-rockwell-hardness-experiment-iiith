@@ -1,0 +1,154 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What quantity is directly measured in the Rockwell hardness test?",
+      "answers": {
+        "a": "Diameter of indentation",
+        "b": "Depth of permanent indentation",
+        "c": "Applied stress",
+        "d": "Elastic strain"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner",
+      "explanations": {
+        "a": "Incorrect. Indentation diameter is measured in some other hardness tests.",
+        "b": "Correct. The Rockwell test determines hardness from the permanent depth of indentation after removing the major load.",
+        "c": "Incorrect. Applied stress is not measured by the Rockwell hardness test.",
+        "d": "Incorrect. Elastic strain is not the basis of Rockwell hardness measurement."
+      }
+    },
+    {
+      "question": "2. What is the purpose of the minor load in a Rockwell hardness test?",
+      "answers": {
+        "a": "To fracture the specimen",
+        "b": "To establish the reference depth",
+        "c": "To measure tensile strength",
+        "d": "To determine specimen thickness"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner",
+      "explanations": {
+        "a": "Incorrect. The specimen should not fracture during the test.",
+        "b": "Correct. The minor load establishes the reference position before the major load is applied.",
+        "c": "Incorrect. Tensile strength is measured using a tensile test.",
+        "d": "Incorrect. Specimen thickness is measured separately."
+      }
+    },
+    {
+      "question": "3. Which indenter is commonly used for the Rockwell C scale?",
+      "answers": {
+        "a": "Steel ball",
+        "b": "Diamond cone (Brale)",
+        "c": "Flat punch",
+        "d": "Vickers pyramid"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner",
+      "explanations": {
+        "a": "Incorrect. Steel balls are used for several Rockwell ball scales such as HRB.",
+        "b": "Correct. The Rockwell C scale uses a 120° diamond cone (Brale) indenter.",
+        "c": "Incorrect. Flat punches are not used in Rockwell hardness testing.",
+        "d": "Incorrect. A Vickers pyramid is used in the Vickers hardness test."
+      }
+    },
+    {
+      "question": "4. The Rockwell hardness test is primarily an example of which type of hardness measurement?",
+      "answers": {
+        "a": "Scratch hardness",
+        "b": "Rebound hardness",
+        "c": "Indentation hardness",
+        "d": "Impact hardness"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate",
+      "explanations": {
+        "a": "Incorrect. Scratch hardness uses resistance to scratching.",
+        "b": "Incorrect. Rebound hardness measures rebound height.",
+        "c": "Correct. Rockwell hardness is based on indentation depth.",
+        "d": "Incorrect. Impact hardness is not the principle of the Rockwell test."
+      }
+    },
+    {
+      "question": "5. What is the included angle of the standard Rockwell diamond cone indenter?",
+      "answers": {
+        "a": "90°",
+        "b": "100°",
+        "c": "120°",
+        "d": "150°"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate",
+      "explanations": {
+        "a": "Incorrect. This is not the standard Rockwell cone angle.",
+        "b": "Incorrect. This is not the standard value.",
+        "c": "Correct. The standard Rockwell diamond cone has an included angle of 120°.",
+        "d": "Incorrect. This angle is not used for the Rockwell cone."
+      }
+    },
+    {
+      "question": "6. Why are multiple hardness readings taken on a specimen?",
+      "answers": {
+        "a": "To reduce measurement uncertainty",
+        "b": "To change the material properties",
+        "c": "To increase specimen thickness",
+        "d": "To reduce the applied load"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate",
+      "explanations": {
+        "a": "Correct. Multiple readings improve reliability and allow an average hardness value to be reported.",
+        "b": "Incorrect. Testing does not intentionally change material properties.",
+        "c": "Incorrect. Testing does not change specimen dimensions.",
+        "d": "Incorrect. The applied load remains fixed for the selected Rockwell scale."
+      }
+    },
+    {
+      "question": "7. A higher Rockwell hardness number generally indicates a material with:",
+      "answers": {
+        "a": "Lower resistance to indentation",
+        "b": "Greater resistance to indentation",
+        "c": "Higher thermal expansion",
+        "d": "Lower density"
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced",
+      "explanations": {
+        "a": "Incorrect. Harder materials resist indentation more effectively.",
+        "b": "Correct. Higher Rockwell hardness indicates greater resistance to permanent indentation.",
+        "c": "Incorrect. Thermal expansion is unrelated to Rockwell hardness.",
+        "d": "Incorrect. Density does not determine the Rockwell hardness number."
+      }
+    },
+    {
+      "question": "8. Which factor most directly affects the Rockwell hardness value?",
+      "answers": {
+        "a": "Permanent indentation depth",
+        "b": "Specimen colour",
+        "c": "Machine weight",
+        "d": "Ambient humidity"
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced",
+      "explanations": {
+        "a": "Correct. Rockwell hardness is calculated from the permanent indentation depth.",
+        "b": "Incorrect. Colour has no effect on hardness measurement.",
+        "c": "Incorrect. Machine weight is unrelated to the hardness value.",
+        "d": "Incorrect. Ambient humidity does not directly determine Rockwell hardness."
+      }
+    },
+    {
+      "question": "9. True or False: Rockwell hardness values are obtained directly from the testing machine without measuring the indentation diameter.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced",
+      "explanations": {
+        "a": "Correct. The Rockwell machine directly indicates the hardness value from indentation depth.",
+        "b": "Incorrect. Rockwell hardness does not require measuring the indentation diameter."
+      }
+    }
+  ]
+}

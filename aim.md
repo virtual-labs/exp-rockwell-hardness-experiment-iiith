@@ -1,0 +1,1 @@
+To determine the Rockwell hardness number (HR) of a given metallic specimen using the Rockwell hardness testing machine and to understand the relationship between indentation depth and material hardness.

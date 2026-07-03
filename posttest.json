@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which Rockwell hardness scale commonly uses a 120° diamond cone (Brale) indenter and a major load of 150 kgf?",
+      "answers": {
+        "a": "HRA",
+        "b": "HRB",
+        "c": "HRC",
+        "d": "HRF"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner",
+      "explanations": {
+        "a": "Incorrect. HRA uses a diamond indenter but with a lower major load.",
+        "b": "Incorrect. HRB uses a steel ball indenter.",
+        "c": "Correct. The HRC scale uses a 120° diamond cone (Brale) indenter with a 150 kgf major load.",
+        "d": "Incorrect. HRF uses a steel ball indenter."
+      }
+    },
+    {
+      "question": "2. Why is the major load removed while the minor load is retained before taking the Rockwell hardness reading?",
+      "answers": {
+        "a": "To measure the permanent indentation depth",
+        "b": "To cool the specimen",
+        "c": "To increase the indentation diameter",
+        "d": "To reduce machine vibration"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner",
+      "explanations": {
+        "a": "Correct. The Rockwell test measures the permanent indentation depth after removing the major load while the minor load remains applied.",
+        "b": "Incorrect. Cooling is not the purpose of removing the major load.",
+        "c": "Incorrect. The indentation diameter is not measured in the Rockwell test.",
+        "d": "Incorrect. Machine vibration is unrelated to this step."
+      }
+    },
+    {
+      "question": "3. A higher Rockwell hardness number indicates:",
+      "answers": {
+        "a": "Greater permanent deformation",
+        "b": "Lower resistance to indentation",
+        "c": "Greater resistance to indentation",
+        "d": "Higher ductility"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner",
+      "explanations": {
+        "a": "Incorrect. Harder materials undergo less permanent deformation.",
+        "b": "Incorrect. Higher hardness means greater resistance to indentation.",
+        "c": "Correct. Higher Rockwell hardness values correspond to greater resistance to permanent indentation.",
+        "d": "Incorrect. Ductility is a different mechanical property."
+      }
+    },
+    {
+      "question": "4. Which of the following is an advantage of the Rockwell hardness test over optical indentation tests?",
+      "answers": {
+        "a": "No indentation is produced",
+        "b": "The hardness value is read directly without measuring the indentation",
+        "c": "It measures tensile strength directly",
+        "d": "It requires microscopic examination after every test"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate",
+      "explanations": {
+        "a": "Incorrect. An indentation is always produced during the test.",
+        "b": "Correct. Rockwell hardness is obtained directly from the machine based on indentation depth.",
+        "c": "Incorrect. Tensile strength is measured using tensile testing.",
+        "d": "Incorrect. Rockwell testing does not require optical measurement."
+      }
+    },
+    {
+      "question": "5. Which indenter is generally used for the Rockwell B scale?",
+      "answers": {
+        "a": "Diamond pyramid",
+        "b": "Diamond cone",
+        "c": "Steel ball",
+        "d": "Flat punch"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate",
+      "explanations": {
+        "a": "Incorrect. Diamond pyramids are used in Vickers testing.",
+        "b": "Incorrect. Diamond cones are used for Rockwell C and A scales.",
+        "c": "Correct. HRB commonly uses a hardened steel (or tungsten carbide) ball indenter.",
+        "d": "Incorrect. Flat punches are not used for Rockwell hardness testing."
+      }
+    },
+    {
+      "question": "6. Why should successive Rockwell indentations be made at different locations on the specimen?",
+      "answers": {
+        "a": "To avoid interaction between adjacent indentations",
+        "b": "To reduce specimen thickness",
+        "c": "To increase the applied load",
+        "d": "To improve machine calibration"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate",
+      "explanations": {
+        "a": "Correct. Adequate spacing prevents previous indentations from affecting subsequent measurements.",
+        "b": "Incorrect. The specimen thickness is unchanged.",
+        "c": "Incorrect. The applied load remains fixed for the selected scale.",
+        "d": "Incorrect. Calibration is performed independently of specimen location."
+      }
+    },
+    {
+      "question": "7. A material produces a very shallow permanent indentation during a Rockwell test. This indicates that the material is:",
+      "answers": {
+        "a": "Very soft",
+        "b": "Highly ductile",
+        "c": "Very hard",
+        "d": "Brittle"
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced",
+      "explanations": {
+        "a": "Incorrect. Soft materials produce deeper indentations.",
+        "b": "Incorrect. Ductility cannot be concluded directly from the indentation depth.",
+        "c": "Correct. Hard materials resist penetration and therefore produce shallow permanent indentations.",
+        "d": "Incorrect. Brittleness cannot be determined directly from Rockwell hardness alone."
+      }
+    },
+    {
+      "question": "8. Which testing parameter should remain constant for all trials performed using the same Rockwell scale?",
+      "answers": {
+        "a": "Specimen colour",
+        "b": "Selected indenter and applied loads",
+        "c": "Operator experience",
+        "d": "Ambient lighting"
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced",
+      "explanations": {
+        "a": "Incorrect. Colour does not affect the test procedure.",
+        "b": "Correct. The selected Rockwell scale specifies the indenter and the applied loads, which must remain constant.",
+        "c": "Incorrect. Operator experience improves consistency but is not a testing parameter.",
+        "d": "Incorrect. Ambient lighting does not affect the hardness measurement."
+      }
+    },
+    {
+      "question": "9. Why is it recommended to report the average Rockwell hardness from multiple trials?",
+      "answers": {
+        "a": "To increase the applied load",
+        "b": "To eliminate the need for calibration",
+        "c": "To obtain a more reliable estimate of the specimen hardness",
+        "d": "To increase indentation depth"
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced",
+      "explanations": {
+        "a": "Incorrect. Averaging does not change the applied load.",
+        "b": "Incorrect. Calibration is still required.",
+        "c": "Correct. Averaging multiple measurements reduces random experimental variation and improves the reliability of the reported hardness value.",
+        "d": "Incorrect. Averaging does not change the indentation depth."
+      }
+    }
+  ]
+}

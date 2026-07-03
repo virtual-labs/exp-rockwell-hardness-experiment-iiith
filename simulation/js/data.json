@@ -1,0 +1,9 @@
+data = {
+    "colors": {
+        "stand": "#c2c9d1",
+        "slab": "black",
+        "test": "red",
+        "bg": "white",
+        "testDark": "#8b0000"
+    }
+}
