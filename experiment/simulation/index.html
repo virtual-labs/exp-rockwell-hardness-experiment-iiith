@@ -1,30 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css" />
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <div id="box">
-        <div class="columns is-centered is-flex">
-            <div class="column mt-2 is-10-desktop is-10-tablet is-10-mobile has-text-centered">
-                <div class="columns is-mobile is-centered is-flex">
-                    <div id="anime-demo" class="column has-text-centered controls">
-                        <button id="play" class="v-button">Play</button>
-                        <button id="pause" class="v-button" disabled>Pause</button>
-                        <button id="restart" class="v-button" disabled>Restart</button>
-                        <br/><br/>
-                        <p>Simulation Speed: <span id="demo_speed"></span>x</p>
-                        <input type="range" min="1" max="8" value="4" class="slider" id="speed">
-                    </div>
-                </div>
+      <div class="columns is-centered is-flex">
+        <div
+          class="column mt-2 is-10-desktop is-10-tablet is-10-mobile has-text-centered"
+        >
+          <div class="columns is-mobile is-centered is-flex">
+            <div id="anime-demo" class="column has-text-centered controls">
+              <button id="play" class="v-button">Play</button>
+              <button id="pause" class="v-button" disabled>Pause</button>
+              <button id="restart" class="v-button" disabled>Restart</button>
+              <br /><br />
+              <p id="trial-indicator" class="v-bold">Trial 1 of 5</p>
+              <p>Simulation Speed: <span id="demo_speed"></span>x</p>
+              <input
+                type="range"
+                min="1"
+                max="8"
+                value="4"
+                class="slider"
+                id="speed"
+              />
             </div>
+          </div>
         </div>
-        <div class="columns is-centered is-variable is-flex is-flex-wrap-wrap workspace">
-            <!-- <div id="apparatus" class="column has-text-centered is-2-desktop is-5-tablet is-5-mobile apparatus">
+      </div>
+      <div
+        class="columns is-centered is-variable is-flex is-flex-wrap-wrap workspace"
+      >
+        <!-- <div id="apparatus" class="column has-text-centered is-2-desktop is-5-tablet is-5-mobile apparatus">
                 <div class="v-datalist-container">
                     <div class="v-datalist-title" >Input Parameters</div>
                     <br/>
@@ -33,42 +47,63 @@
                     
                 </div>
             </div> -->
-            
-            <div  class="column has-text-centered is-4-desktop is-5-tablet is-10-mobile observations">
-                <div class="v-datalist-container ">
-                    <div class="v-datalist-title">Observations</div>
-                    <div class="v-datalist-row" id="obs-table">
-                        <div class="v-table-wrap">
-                            <table class="table is-bordered is-fullwidth v-table-primary mb-2 has-text-centered">
-                                <thead>
-                                    <tr>
-                                        <th>Trial</th>
-                                        <th>Material</th>
-                                        <th>Total Load (Kg)</th>
-                                        <th>Rockwell Hardness Number (RHN)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td class="is-vcentered has-text-centered" rowspan="2">Cast Iron</td>
-                                        <td class="is-vcentered has-text-centered" rowspan="2">100</td>
-                                        <td>32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>59</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="has-text-centered" colspan="4">Average Rockwell Hardness Number = 45.5</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-            
-                        <div id="result"></div>
-                    </div>
-                    <!-- <div class="v-datalist-row ">
+
+        <div
+          class="column has-text-centered is-4-desktop is-5-tablet is-10-mobile observations"
+        >
+          <div class="v-datalist-container">
+            <div class="v-datalist-title">Observations</div>
+            <div class="v-datalist-row" id="obs-table">
+              <div class="v-table-wrap">
+                <table
+                  class="table is-bordered is-fullwidth v-table-primary mb-2 has-text-centered"
+                >
+                  <thead>
+                    <tr>
+                      <th>Trial</th>
+                      <th>Material</th>
+                      <th>Total Load (Kg)</th>
+                      <th>Rockwell Hardness Number (RHN)</th>
+                    </tr>
+                  </thead>
+                  <tbody id="obs-body">
+                    <tr id="trial-row-1">
+                      <td>1</td>
+                      <td class="cell-material">-</td>
+                      <td class="cell-load">-</td>
+                      <td class="cell-rhn">-</td>
+                    </tr>
+                    <tr id="trial-row-2">
+                      <td>2</td>
+                      <td class="cell-material">-</td>
+                      <td class="cell-load">-</td>
+                      <td class="cell-rhn">-</td>
+                    </tr>
+                    <tr id="trial-row-3">
+                      <td>3</td>
+                      <td class="cell-material">-</td>
+                      <td class="cell-load">-</td>
+                      <td class="cell-rhn">-</td>
+                    </tr>
+                    <tr id="trial-row-4">
+                      <td>4</td>
+                      <td class="cell-material">-</td>
+                      <td class="cell-load">-</td>
+                      <td class="cell-rhn">-</td>
+                    </tr>
+                    <tr id="trial-row-5">
+                      <td>5</td>
+                      <td class="cell-material">-</td>
+                      <td class="cell-load">-</td>
+                      <td class="cell-rhn">-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div id="result"></div>
+            </div>
+            <!-- <div class="v-datalist-row ">
                         <div class="v-table-wrap">
                             <div class="column has-text-centered">
                                 <div id="chartContainer" class="mt-0"></div>
@@ -76,29 +111,26 @@
                         </div>         
 
                     </div> -->
-                </div>
-            </div>
-
-            <div class="column has-text-centered is-5-desktop is-10-tablet is-10-mobile simulation" id="container">
-                <div class="v-datalist-container">
-                    <div class="columns">
-                        <div class="column has-text-centered ">
-                            <canvas class="main " id="main"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div
+          class="column has-text-centered is-5-desktop is-10-tablet is-10-mobile simulation"
+          id="container"
+        >
+          <div class="v-datalist-container">
+            <div class="columns">
+              <div class="column has-text-centered">
+                <canvas class="main" id="main"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
- 
-<script src='https://cdn.plot.ly/plotly-2.2.0.min.js'></script>
-<script src="./js/data.json"></script>
-<script src="./js/main.js"></script>
 
-</body>
-
+    <script src="https://cdn.plot.ly/plotly-2.2.0.min.js"></script>
+    <script src="./js/data.json"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
-
-
-
-
