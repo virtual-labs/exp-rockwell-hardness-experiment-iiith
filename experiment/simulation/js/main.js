@@ -1,160 +1,40 @@
-'use strict';
+"use strict";
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
+  const totalTrials = 5;
+  const materialName = "Cast Iron";
+  const totalLoadKg = 100;
+  const rhnReadings = [62, 61, 63, 62, 64];
 
-    const restartButton = document.getElementById('restart');
-    restartButton.addEventListener('click', restart);
+  const restartButton = document.getElementById("restart");
+  restartButton.addEventListener("click", restart);
 
-    const playButton = document.getElementById('play');
-    playButton.addEventListener('click', play);
+  const playButton = document.getElementById("play");
+  playButton.addEventListener("click", play);
 
-    const pauseButton = document.getElementById('pause');
-    pauseButton.addEventListener('click', pause);
+  const pauseButton = document.getElementById("pause");
+  pauseButton.addEventListener("click", pause);
 
-    const slider = document.getElementById('speed');
-    const output = document.getElementById('demo_speed');
-    output.innerHTML = (slider.value) / 4;
-    slider.oninput = function() {
-        output.innerHTML = (this.value) / 4;
-        FPS = originalFPS * (output.innerHTML);
-        restart();
-    };
+  const slider = document.getElementById("speed");
+  const output = document.getElementById("demo_speed");
+  const trialIndicator = document.getElementById("trial-indicator");
+  const resultBox = document.getElementById("result");
+  const trialRows = Array.from({ length: totalTrials }, (_, i) =>
+    document.getElementById("trial-row-" + (i + 1)),
+  );
 
-    function restart() {
-        window.clearTimeout(tmHandle);
-        window.clearTimeout(tms);
-        setAll();
-        play();
-    }
+  let currentTrial = 0;
+  let trialValues = [];
+  output.innerHTML = slider.value / 4;
+  slider.oninput = function () {
+    output.innerHTML = this.value / 4;
+    FPS = originalFPS * output.innerHTML;
+    restart();
+  };
 
-    function play() {
-        tmHandle = window.setTimeout(draw, 1000 / FPS);
-        pauseButton.removeAttribute("disabled");
-        restartButton.removeAttribute("disabled");
-        playButton.setAttribute("disabled", "true");
-    }
-
-    function setAll() {
-        knob = [
-            [knobStartX, knobStartY],
-            [knobStartX + knobWidth1, knobStartY],
-            [knobStartX + knobWidth2, knobStartY + knobLength],
-            [knobStartX + knobWidth1 - knobWidth2, knobStartY + knobLength]
-        ];
-    }
-
-    function pause() {
-        window.clearTimeout(tmHandle);
-        pauseButton.setAttribute("disabled", "true");
-        playButton.removeAttribute("disabled");
-    }
-
-    const canvas = document.getElementById("main");
-    canvas.width = 450;
-    canvas.height = 680;
-    // canvas.style = "border:3px solid;";
-    const ctx = canvas.getContext("2d");
-
-    const originalFPS = 10;
-    let FPS = 10;
-    let tms;
-
-    const topStartX = 100;
-    const topStartY = 100;
-    const topWidth1 = 100;
-    const topWidth2 = 80;
-    const topLength1 = 50;
-    const topLength2 = 80;
-
-    const topKnob = [
-        [topStartX, topStartY],
-        [topStartX + topWidth1, topStartY],
-        [topStartX + topWidth1, topStartY + topLength1],
-        [topStartX + topWidth2, topStartY + topLength1],
-        [topStartX + topWidth2, topStartY + topLength1 + topLength2],
-        [topStartX + (topWidth1 - topWidth2), topStartY + topLength1 + topLength2],
-        [topStartX + (topWidth1 - topWidth2), topStartY + topLength1],
-        [topStartX, topStartY + topLength1]
-
-    ];
-
-    const bottomStartx = 80;
-    const bottomStarty = 310;
-    const bottomWidth1 = 140;
-    const bottomWidth2 = 100;
-    const bottomWidth3 = 60;
-    const bottomLength1 = 60;
-    const bottomLength2 = 50;
-    const bottomLength3 = 80;
-
-    const bottomKnob = [
-        [bottomStartx, bottomStarty],
-        [bottomStartx + bottomWidth1, bottomStarty],
-        [bottomStartx + bottomWidth1, bottomStarty + bottomLength1],
-        [bottomStartx + bottomWidth2, bottomStarty + bottomLength1],
-        [bottomStartx + bottomWidth2, bottomStarty + bottomLength1 + bottomLength2],
-        [bottomStartx + bottomWidth3, bottomStarty + bottomLength1 + bottomLength2],
-        [bottomStartx + bottomWidth3, bottomStarty + bottomLength1 + bottomLength2 + bottomLength3],
-        [bottomStartx + (bottomWidth1 - bottomWidth3), bottomStarty + bottomLength1 + bottomLength2 + bottomLength3],
-        [bottomStartx + (bottomWidth1 - bottomWidth3), bottomStarty + bottomLength1 + bottomLength2],
-        [bottomStartx + (bottomWidth1 - bottomWidth2), bottomStarty + bottomLength1 + bottomLength2],
-        [bottomStartx + (bottomWidth1 - bottomWidth2), bottomStarty + bottomLength1],
-        [bottomStartx, bottomStarty + bottomLength1]
-    ];
-
-    const slabX = 80;
-    const slabY = 500;
-    const slabWidth = 140;
-    const slabLength = 40;
-
-    const slab = [
-        [slabX, slabY],
-        [slabX + slabWidth, slabY],
-        [slabX + slabWidth, slabY + slabLength],
-        [slabX, slabY + slabLength]
-
-    ];
-
-    const knobStartX = 120;
-    const knobStartY = 170;
-    const knobWidth1 = 60;
-    const knobWidth2 = 32;
-    const knobLength = 55;
-
-    let knob = [];
-
-    const testX = 120;
-    const testY = 280;
-    const testWidth = 60;
-    const testHeight = 30;
-
-    const test = [
-        [testX, testY],
-        [testX + testWidth, testY],
-        [testX + testWidth, testY + testHeight],
-        [testX, testY + testHeight]
-    ];
-
-    const centerX = 250;
-    const centerY = 200;
-    const radius = 50;
-    const boxWidth = 100;
-    let tmHandle;
-
-    const zoomHeight = 30;
-    const box = [
-        [centerX, centerY - radius],
-        [centerX + boxWidth, centerY - radius],
-        [centerX + boxWidth, centerY + radius],
-        [centerX, centerY + radius],
-    ];
-
-    const zoomTest = [
-        [centerX, centerY - zoomHeight],
-        [centerX + boxWidth, centerY - zoomHeight],
-        [centerX + boxWidth, centerY + zoomHeight],
-        [centerX, centerY + zoomHeight],
-    ];
+  function restart() {
+    window.clearTimeout(tmHandle);
+    window.clearTimeout(tms);
     setAll();
     resetObservations();
     initFrame();
